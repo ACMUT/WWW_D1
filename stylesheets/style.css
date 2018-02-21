@@ -1,0 +1,97 @@
+html {
+    background-color: #d9d9d9;
+}
+
+body {
+    max-width: 60rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    text-decoration: none;
+    color: darkgoldenrod;
+}
+
+a:hover,
+a:focus {
+    color: goldenrod;
+}
+
+.header__title {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.header__info {
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    color: #777;
+}
+
+.content {
+    display: flex;
+}
+
+.footer,
+.header,
+.posts,
+.sidebar {
+    margin: 1rem;
+}
+
+.posts,
+.sidebar {
+    padding: 1rem;
+    background-color: #fefefe;
+    box-shadow: 0 .1rem .25rem rgba(0, 0, 0, .15);
+}
+
+.posts {
+    flex-grow: 1;
+}
+
+.sidebar {
+    flex-basis: 20rem;
+}
+
+.sitelinks {
+    padding: 0;
+    list-style: none;
+}
+
+.sitelinks__link {
+    display: block;
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+}
+
+.posts__header {
+    margin-bottom: .5rem;
+}
+
+.post {
+    padding-bottom: 1rem;
+}
+
+.post + .post {
+    padding-top: 1rem;
+    border-top: 1px solid #e0e0e0;
+}
+
+.post__meta,
+.footer {
+    color: #777;
+    font-size: .9rem;
+}
+
+@media (max-width: 40em) {
+    .content {
+        flex-direction: column;
+    }
+
+    .posts,
+    .sidebar {
+        flex: 0 1 auto;
+    }
+}
