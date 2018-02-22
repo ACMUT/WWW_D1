@@ -52,7 +52,8 @@ a:focus {
 }
 
 .sidebar {
-    flex-basis: 20rem;
+    flex-basis: 11rem;
+    flex-shrink: 0;
 }
 
 .sitelinks {
@@ -72,6 +73,7 @@ a:focus {
 
 .post {
     padding-bottom: 1rem;
+    word-break: break-all;
 }
 
 .post + .post {
